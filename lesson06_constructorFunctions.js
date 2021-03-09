@@ -1,5 +1,3 @@
-//Let's talk OOP
-
 //Constructor function is essentially a function that allows us to create an object
 
 //Make sure constructor functions always start with a capital letter!
