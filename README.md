@@ -154,3 +154,24 @@ Prototypal Inheritance
     //This eliminated the use of repeated code and we can make more
     //complex functionality this way
 ```
+
+Classes
+
+```
+//Passing prototypal inheritance down is rasther tricky however and results in some ugly code
+//that can be hard to maintain. Instead we can use classes to refactor our code with classes.
+//Classes will take care of prototypal inheritance for our methods
+
+    //Let's create a class similar to previous constructor function
+    class Enemy{
+        constructor(life, name, level){
+            this.life = life;
+            this.name = name;
+            this.level = level;
+        }
+        //We can introduce methods directly here and they will be added to the prototype umbreall
+        getInfo(){
+            console.log(this.life, this.name, this.level);
+        }
+    }
+```
